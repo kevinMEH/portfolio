@@ -1,5 +1,13 @@
 import data from "@/custom/data.json";
 
+export async function getTag() {
+    return data.tag;
+}
+
+export async function getUrl() {
+    return data.url;
+}
+
 export async function getTitle() {
     return data.title;
 }

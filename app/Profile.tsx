@@ -2,7 +2,7 @@ import Image from "next/image";
 import ProfilePicture from "@/custom/profile.png";
 
 export default function Profile() {
-    return <div className="w-full flex justify-around -mb-8">
+    return <div className="w-full flex justify-around -mb-10">
         <div className="w-[min(40%,128px)] min-w-[100px]">
             <Image
                 src={ProfilePicture}
