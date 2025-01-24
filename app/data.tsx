@@ -7,3 +7,11 @@ export async function getTitle() {
 export async function getDescription() {
     return data.description;
 }
+
+export async function getTechnologiesDescriptions() {
+    return data.technologiesDescription;
+}
+
+export async function getTechnologies() {
+    return data.technologies;
+}
