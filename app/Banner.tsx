@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BannerImage from "@/images/banner.png";
+import BannerImage from "@/custom/banner.png";
 
 export default function Banner({ className = "" }: { className?: string }) {
     return <div className={`relative -z-10 ${className}`}>
