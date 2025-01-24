@@ -16,8 +16,7 @@ export default {
             "bg-mid": "#171B1C",
             
             "main": "#EFF8FA",
-            "sub": "#808889",
-            "highlight": "#3F8071"
+            "sub": "#B3BDC1",
         },
         fontFamily: {
             "inter": ["var(--font-inter)"],
