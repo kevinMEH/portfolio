@@ -15,3 +15,7 @@ export async function getTechnologiesDescriptions() {
 export async function getTechnologies() {
     return data.technologies;
 }
+
+export async function getProjects() {
+    return data.projects;
+}
