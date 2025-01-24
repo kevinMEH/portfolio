@@ -9,7 +9,7 @@ export default function Banner({ className = "" }: { className?: string }) {
             fill={true}
             className="object-cover"
         />
-        <div className="w-full pb-[min(50%,200px)]" />
+        <div className="w-full pb-[min(40%,200px)]" />
         <div className="absolute inset-0 bg-bg-dark/10" />
     </div>
 }
