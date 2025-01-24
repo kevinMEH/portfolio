@@ -7,7 +7,7 @@ export default function Profile() {
             <Image
                 src={ProfilePicture}
                 alt="Profile Picture"
-                className="rounded-full border-bg-dark border-[6px] -ml-[6px] -mt-[max(18%,80px)]"
+                className="rounded-full border-bg-dark border-[6px] -mt-[max(18%,80px)]"
             />
         </div>
     </div>
