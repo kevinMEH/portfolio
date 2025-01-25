@@ -15,6 +15,7 @@ export default function Portfolio() {
                 <Technologies />
                 <Projects />
                 <Contact />
+                <Footer />
             </div>
         </div>
     );
