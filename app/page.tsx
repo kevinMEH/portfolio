@@ -1,16 +1,15 @@
 import AboutMe from "./AboutMe";
 import Banner from "./Banner";
 import Contact from "./Contact";
-import Profile from "./Profile";
+import Footer from "./Footer";
 import Projects from "./Projects";
 import Technologies from "./Technologies";
 
 export default function Portfolio() {
     return (
-        <div>
+        <div className="mx-auto max-w-[700px]">
             <Banner />
-            <div className="px-6 sm:px-12 space-y-12 pt-4 pb-8">
-                <Profile />
+            <div className="px-6 md:px-8 space-y-12 lg:space-y-24 pt-4 pb-12">
                 <AboutMe />
                 <Technologies />
                 <Projects />

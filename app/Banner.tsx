@@ -2,7 +2,7 @@ import Image from "next/image";
 import BannerImage from "@/custom/banner.png";
 
 export default function Banner({ className = "" }: { className?: string }) {
-    return <div className={`relative -z-10 ${className}`}>
+    return <div className={`relative -z-10 lg:mt-8 lg:rounded-xl overflow-clip ${className}`}>
         <Image
             src={BannerImage}
             alt="Banner image"

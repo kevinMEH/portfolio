@@ -8,7 +8,7 @@ export default async function Contact() {
         getContacts()
     ]);
 
-    const iconAssociations: Map<string, ({size}: {size: number}) => JSX.Element> = new Map();
+    const iconAssociations: Map<string, (props: IconParameters) => JSX.Element> = new Map();
     iconAssociations.set("email", EmailIcon);
     iconAssociations.set("github", GithubIcon);
 
@@ -17,7 +17,7 @@ export default async function Contact() {
             <h2 className="text-sub font-bold font-mono sm:text-lg">
                 Contact
             </h2>
-            <p className="text-sm pb-2 md:pb-3">
+            <p className="text-sm lg:text-base pb-2 md:pb-3">
                 {contactTitle}
             </p>
             <div className="flex gap-4">
@@ -27,11 +27,11 @@ export default async function Contact() {
                         return <>
                             <Link
                                 key={contact.type}
-                                className="flex gap-2 items-center font-mono text-sm border-b"
+                                className="flex gap-2 items-center font-mono text-sm lg:text-base border-b"
                                 href={contact.href}
                                 target="_blank"
                             >
-                                <Icon size={14} />
+                                <Icon className="size-[14px] lg:size-4" />
                                 <span className="leading-tight">{contact.text}</span>
                             </Link>
                             <span key={contact.type + "/"} className="last:hidden">/</span>
@@ -43,7 +43,12 @@ export default async function Contact() {
     );
 }
 
-function EmailIcon({ size }: { size: number }) {
+type IconParameters = {
+    size?: number,
+    className?: string
+}
+
+function EmailIcon({ size, className }: IconParameters) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +58,7 @@ function EmailIcon({ size }: { size: number }) {
             stroke="currentColor"
             width={size}
             height={size}
+            className={className}
         >
             <path
                 strokeLinecap="round"
@@ -63,7 +69,7 @@ function EmailIcon({ size }: { size: number }) {
     );
 }
 
-function GithubIcon({ size }: { size: number }) {
+function GithubIcon({ size, className }: IconParameters) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -73,6 +79,7 @@ function GithubIcon({ size }: { size: number }) {
             strokeWidth={2}
             width={size}
             height={size}
+            className={className}
         >
             <path
                 strokeLinecap="round"
@@ -83,7 +90,7 @@ function GithubIcon({ size }: { size: number }) {
     );
 }
 
-function LinkIcon({ size }: { size: number }) {
+function LinkIcon({ size, className }: IconParameters) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,6 +100,7 @@ function LinkIcon({ size }: { size: number }) {
             stroke="currentColor"
             width={size}
             height={size}
+            className={className}
         >
             <path
                 strokeLinecap="round"
