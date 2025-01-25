@@ -27,7 +27,8 @@ export default async function Contact() {
                         return <>
                             <Link
                                 key={contact.type}
-                                className="flex gap-2 items-center font-mono text-sm lg:text-base border-b"
+                                className="flex gap-2 items-center font-mono text-sm lg:text-base
+                                border-b border-transparent hover:border-main opacity-80 hover:opacity-100 transition-all"
                                 href={contact.href}
                                 target="_blank"
                             >

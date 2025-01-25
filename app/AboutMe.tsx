@@ -18,10 +18,10 @@ export default async function AboutMe() {
             <Image
                 src={ProfilePicture}
                 alt="Profile Picture"
-                className="rounded-full outline outline-bg-dark outline-[6px] sm:outline-8 -mt-[80px]"
+                className="select-none rounded-full outline outline-bg-dark outline-[6px] sm:outline-8 -mt-[80px]"
             />
         </div>
-        <Link href={url} target="_blank" className="text-sm sm:text-base font-mono text-sub leading-none">
+        <Link href={url} target="_blank" className="select-none text-sm sm:text-base font-mono text-main/50 hover:text-main/85 transition-colors leading-none">
             { tag }
         </Link>
         <h1 className="text-xl sm:text-2xl font-semibold leading-none pb-1">
