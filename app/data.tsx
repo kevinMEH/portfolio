@@ -32,14 +32,10 @@ export async function getProjects() {
     return data.projects;
 }
 
-export async function getContactOverlayStyle() {
-    return data.contactOverlayStyle;
+export async function getContactText() {
+    return data.contactText;
 }
 
-export async function getContactTitle() {
-    return data.contactTitle;
-}
-
-export async function getContactButtonText() {
-    return data.contactButtonText;
+export async function getContacts() {
+    return data.contacts;
 }
