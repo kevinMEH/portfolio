@@ -17,7 +17,7 @@ export default async function Projects() {
         <div className="space-y-5">
             { projects.map((project, index) => {
                 return <Link key={index} className="relative rounded-xl flex flex-col gap-3 p-4 justify-end h-48" href={project.url} target="_blank">
-                    <div className="font-mono flex flex-col justify-end gap-1">
+                    <div className="font-mono tracking-tight flex flex-col justify-end gap-1">
                         <h3 className="font-semibold">{ project.title }</h3>
                         <p className="text-xs text-main/70">{ project.description }</p>
                     </div>
