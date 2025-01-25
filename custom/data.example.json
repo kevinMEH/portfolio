@@ -10,7 +10,7 @@
     "technologies": [
         {
             "textStyle": "text-[#B2EEA9]/80",
-            "backgroundStyle": "bg-[#153015]",
+            "backgroundStyle": "bg-[#153015]/60 hover:bg-[#153015]",
             "items": [
                 "Technology A",
                 "Technology B",
@@ -19,7 +19,7 @@
         },
         {
             "textStyle": "text-[#8CEBDE]/80",
-            "backgroundStyle": "bg-[#16352E]",
+            "backgroundStyle": "bg-[#16352E]/60 hover:bg-[#16352E]",
             "items": [
                 "Technology 1",
                 "Technology 2",
