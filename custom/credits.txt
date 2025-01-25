@@ -8,6 +8,3 @@ https://unsplash.com/photos/panoramic-photography-of-mountains-kKvQJ6rK6S4
 
 project_3.png:
 https://unsplash.com/photos/a-painting-of-a-group-of-people-in-a-courtyard-TH8_P_XtmhY
-
-contact.png:
-https://unsplash.com/photos/grass-covered-field-and-forest-and-mountain-at-the-distance-during-night-CPjkWSD0RM0
