@@ -1,5 +1,9 @@
 import data from "@/custom/data.json";
 
+export async function getWebsiteTitle() {
+    return data.websiteTitle;
+}
+
 export async function getTag() {
     return data.tag;
 }

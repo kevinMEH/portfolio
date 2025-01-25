@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
+import { getWebsiteTitle } from "./data";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Portfolio | Kevin Liao",
+    title: await getWebsiteTitle(),
 };
 
 const inter = Inter({
