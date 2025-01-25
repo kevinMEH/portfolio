@@ -48,6 +48,7 @@ type IconParameters = {
     className?: string
 }
 
+// Supplied by Hero Icons
 function EmailIcon({ size, className }: IconParameters) {
     return (
         <svg
@@ -69,6 +70,7 @@ function EmailIcon({ size, className }: IconParameters) {
     );
 }
 
+// Supplied by Feather Icons
 function GithubIcon({ size, className }: IconParameters) {
     return (
         <svg
@@ -90,6 +92,7 @@ function GithubIcon({ size, className }: IconParameters) {
     );
 }
 
+// Supplied by Hero Icons
 function LinkIcon({ size, className }: IconParameters) {
     return (
         <svg
