@@ -9,12 +9,12 @@ export default async function Contact() {
         getContactButtonText()
     ]);
 
-    return <div className="space-y-3 pt-8">
-        <div className="relative rounded-2xl overflow-clip flex flex-col items-center justify-center text-center gap-5 h-[calc(100vh-64px)] pb-8">
-            <h2 className="text-sub font-bold font-mono text-center">Contact</h2>
-            <h3 className="text-2xl leading-tight font-bold w-[240px] pb-1.5">{ contactTitle }</h3>
-            <button className="flex items-center gap-2 px-4 py-3 rounded-lg border border-main/40">
-                <span className="font-mono font-medium text-sm tracking-tight leading-none">{ contactButtonText }</span>
+    return <div className="space-y-3 pt-8 sm:pb-16">
+        <div className="relative rounded-2xl overflow-clip flex flex-col items-center justify-center text-center gap-5 h-[calc(100vh-64px)] sm:h-96 pb-8">
+            <h2 className="text-sub font-bold font-mono text-center sm:text-lg">Contact</h2>
+            <h3 className="text-2xl sm:text-3xl leading-tight font-bold w-[240px] pb-2">{ contactTitle }</h3>
+            <button className="flex items-center gap-2 px-4 sm:px-5 py-3 rounded-lg border border-main/40">
+                <span className="font-mono font-medium text-sm sm:text-base tracking-tight leading-none">{ contactButtonText }</span>
                 <RightArrow size={14} />
             </button>
             <div className={`absolute inset-0 -z-10 ${contactOverlayStyle}`} />

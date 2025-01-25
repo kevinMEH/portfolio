@@ -9,14 +9,14 @@ export default async function AboutMe() {
         getDescription()
     ]);
 
-    return <div className="space-y-2 text-center pb-2">
-        <Link href={url} target="_blank" className="text-sm font-mono text-sub leading-none">
+    return <div className="flex flex-col items-center gap-2 text-center pb-2">
+        <Link href={url} target="_blank" className="text-sm sm:text-base font-mono text-sub leading-none">
             { tag }
         </Link>
-        <h1 className="text-xl font-semibold leading-none pb-1">
+        <h1 className="text-xl sm:text-2xl font-semibold leading-none pb-1">
             { title }
         </h1>
-        <p className="text-sm">
+        <p className="text-sm sm:text-base sm:max-w-[510px]">
             { description }
         </p>
     </div>

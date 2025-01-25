@@ -9,7 +9,7 @@ export default function Portfolio() {
     return (
         <div>
             <Banner />
-            <div className="px-6 space-y-12 pt-4 pb-8">
+            <div className="px-6 sm:px-12 space-y-12 pt-4 pb-8">
                 <Profile />
                 <AboutMe />
                 <Technologies />

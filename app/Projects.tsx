@@ -13,13 +13,13 @@ export default async function Projects() {
     }
 
     return <div className="space-y-3">
-        <h2 className="text-sub font-bold font-mono">Featured Projects</h2>
-        <div className="space-y-5">
+        <h2 className="text-sub font-bold font-mono sm:text-lg">Featured Projects</h2>
+        <div className="space-y-5 sm:space-y-8 sm:pt-3">
             { projects.map((project, index) => {
-                return <Link key={index} className="relative rounded-xl flex flex-col gap-3 p-4 justify-end h-48" href={project.url} target="_blank">
+                return <Link key={index} className="relative rounded-xl flex flex-col gap-3 p-4 sm:p-6 justify-end h-48" href={project.url} target="_blank">
                     <div className="font-mono tracking-tight flex flex-col justify-end gap-1">
-                        <h3 className="font-semibold">{ project.title }</h3>
-                        <p className="text-xs text-main/70">{ project.description }</p>
+                        <h3 className="font-semibold sm:text-lg">{ project.title }</h3>
+                        <p className="text-xs sm:text-sm text-main/70">{ project.description }</p>
                     </div>
                     <div className={`absolute inset-0 -z-10 ${project.overlayStyle}`} />
                     <Image src={projectImages[index]} alt={`Project ${index} thumbnail`} className="rounded-lg absolute inset-0 h-full -z-20 object-cover" />
