@@ -27,3 +27,15 @@ export async function getTechnologies() {
 export async function getProjects() {
     return data.projects;
 }
+
+export async function getContactOverlayStyle() {
+    return data.contactOverlayStyle;
+}
+
+export async function getContactTitle() {
+    return data.contactTitle;
+}
+
+export async function getContactButtonText() {
+    return data.contactButtonText;
+}
