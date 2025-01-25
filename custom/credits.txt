@@ -3,6 +3,9 @@ Thanks to Unsplash for the following project images:
 profile.png:
 https://unsplash.com/photos/blue-mountains-at-daytime-IhWRrZx4-kk
 
+project_1.png:
+https://unsplash.com/photos/bird-eye-view-photography-of-a-green-trees-uMWPrcRsrto
+
 banner.png, project_2.png:
 https://unsplash.com/photos/panoramic-photography-of-mountains-kKvQJ6rK6S4
 
