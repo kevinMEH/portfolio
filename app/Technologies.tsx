@@ -12,7 +12,7 @@ export default async function Technologies() {
         <div className="flex text-nowrap gap-2 lg:gap-2.5 flex-wrap font-mono -mx-1 pt-1">
             { technologies.map(group => {
                 return group.items.map(item => {
-                    return <span key={item} className={`cursor-pointer rounded-md px-2.5 py-1 text-xs lg:text-sm transition-colors ${group.textStyle} ${group.backgroundStyle}`}>
+                    return <span key={item} className={`cursor-pointer rounded-md px-2.5 py-1 text-xs md:text-sm transition-colors ${group.textStyle} ${group.backgroundStyle}`}>
                         { item }
                     </span>
                 });

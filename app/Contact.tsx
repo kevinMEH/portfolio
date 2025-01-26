@@ -17,7 +17,7 @@ export default async function Contact() {
             <h2 className="text-sub font-bold font-mono sm:text-lg">
                 Contact
             </h2>
-            <p className="text-sm lg:text-base pb-2 md:pb-3">
+            <p className="text-sm sm:text-base pb-2 md:pb-3">
                 {contactTitle}
             </p>
             <div className="flex gap-4">
