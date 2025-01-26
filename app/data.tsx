@@ -39,3 +39,7 @@ export async function getContactText() {
 export async function getContacts() {
     return data.contacts;
 }
+
+export async function getHideAttribution() {
+    return data.hideAttribution;
+}

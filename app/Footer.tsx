@@ -1,7 +1,10 @@
 import Link from "next/link";
+import { getHideAttribution } from "./data";
 
-export default function Footer() {
-    return <div className="flex flex-col items-center py-4">
+export default async function Footer() {
+    const hideAttribution = await getHideAttribution();
+
+    return <div className={`flex flex-col items-center py-4 ${hideAttribution ? "invisible" : ""}`}>
         <Link href="https://github.com/kevinMEH/portfolio" target="_blank" className="flex items-center gap-1.5 text-main/50 hover:text-main transition-colors">
             <StarIcon size={14} />
             <span className="text-xs font-mono leading-none pt-[0.5px]">
