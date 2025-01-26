@@ -1,16 +1,9 @@
 import Image from "next/image";
 import { getProjects } from "./data";
-import Project_1 from "@/custom/project_1.png"
-import Project_2 from "@/custom/project_2.png"
-import Project_3 from "@/custom/project_3.png"
 import Link from "next/link";
 
 export default async function Projects() {
     const projects = await getProjects();
-    const projectImages = [ Project_1, Project_2, Project_3 ];
-    if(projects.length !== projectImages.length) {
-        throw new Error("Please ensure that you have an image for each featured project.");
-    }
 
     return <div className="flex flex-col gap-3">
         <h2 className="text-sub font-bold font-mono sm:text-lg">Featured Projects</h2>
@@ -22,7 +15,16 @@ export default async function Projects() {
                         <p className="text-xs sm:text-sm text-main/70">{ project.description }</p>
                     </div>
                     <div className={`absolute inset-0 -z-10 transition-colors ${project.overlayStyle}`} />
-                    <Image src={projectImages[index]} alt={`Project ${index} thumbnail`} className="rounded-lg absolute inset-0 h-full -z-20 object-cover" />
+                    <Image
+                        src={`/images/project_${index + 1}.png`}
+                        alt={`Project ${index} thumbnail`}
+                        width={750}
+                        height={500}
+                        // Unusual sizes because NextJS's image optimization algorithm is garbage
+                        // and will not properly optimize otherwise.
+                        sizes="(max-width: 639px) 100vw, (max-width: 1000vw) 640px, 33vw"
+                        className="rounded-lg absolute inset-0 h-full -z-20 object-cover"
+                    />
                 </Link>
             }) }
         </div>
