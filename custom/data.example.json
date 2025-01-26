@@ -33,17 +33,20 @@
             "title": "Local LLM",
             "description": "Local LLM is a beautifully designed app that lets you host Large Language Models (LLMs) locally on your computer.",
             "url": "https://github.com/kevinMEH/local-llm",
-            "overlayStyle": "bg-bg-dark/30 group-hover:bg-bg-dark/50"
+            "overlayStyle": "bg-bg-dark/30 group-hover:bg-bg-dark/50",
+            "imageQuality": 75
         }, {
             "title": "Portfolio v5",
             "description": "Version 5 of my personal portfolio website which you are viewing right now.",
             "url": "https://github.com/kevinMEH/portfolio",
-            "overlayStyle": "bg-bg-dark/50 group-hover:bg-bg-dark/70"
+            "overlayStyle": "bg-bg-dark/50 group-hover:bg-bg-dark/70",
+            "imageQuality": 75
         }, {
             "title": "Simple StyleGAN",
             "description": "A simple and faithful implementation of Nvidia's StyleGAN, free from the complexities featured in all other implementations.",
             "url": "https://github.com/kevinMEH/simple-stylegan",
-            "overlayStyle": "bg-bg-dark/70 group-hover:bg-bg-dark/85"
+            "overlayStyle": "bg-bg-dark/70 group-hover:bg-bg-dark/85",
+            "imageQuality": 75
         }
     ],
 

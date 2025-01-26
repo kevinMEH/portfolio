@@ -20,6 +20,7 @@ export default async function Projects() {
                         alt={`Project ${index} thumbnail`}
                         width={750}
                         height={500}
+                        quality={project.imageQuality}
                         // Unusual sizes because NextJS's image optimization algorithm is garbage
                         // and will not properly optimize otherwise.
                         sizes="(max-width: 639px) 100vw, (max-width: 1000vw) 640px, 33vw"
