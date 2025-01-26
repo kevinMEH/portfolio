@@ -13,7 +13,7 @@ export default async function Contact() {
     iconAssociations.set("github", GithubIcon);
 
     return (
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 lg:pb-8">
             <h2 className="text-sub font-bold font-mono sm:text-lg">
                 Contact
             </h2>
