@@ -6,6 +6,7 @@ export default function Banner({ className = "" }: { className?: string }) {
             src="/images/banner.png"
             alt="Banner image"
             fill={true}
+            priority={true}
             quality={85}
             // Unusual sizes because NextJS's image optimization algorithm is garbage and will not
             // properly optimize otherwise.
