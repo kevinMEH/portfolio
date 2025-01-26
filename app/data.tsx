@@ -4,6 +4,10 @@ export async function getWebsiteTitle() {
     return data.websiteTitle;
 }
 
+export async function getWebsiteDescription() {
+    return data.websiteDescription;
+}
+
 export async function getTag() {
     return data.tag;
 }

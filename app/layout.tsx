@@ -1,10 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fira_Code } from "next/font/google";
-import { getWebsiteTitle } from "./data";
+import { getWebsiteDescription, getWebsiteTitle } from "./data";
 import "./globals.css";
+import Meta from "./Meta";
 
 export const metadata: Metadata = {
     title: await getWebsiteTitle(),
+    description: await getWebsiteDescription()
 };
 
 export const viewport: Viewport = {
@@ -28,6 +30,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className={`${inter.variable} ${mono.variable}`} suppressHydrationWarning={true}>
+            <head><Meta/></head>
             <body className="bg-bg-dark text-main font-inter">
                 {children}
             </body>
