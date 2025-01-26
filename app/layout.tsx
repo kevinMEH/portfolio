@@ -29,9 +29,9 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={`${inter.variable} ${mono.variable}`} suppressHydrationWarning={true}>
+        <html lang="en" className={`h-full ${inter.variable} ${mono.variable}`} suppressHydrationWarning={true}>
             <head><Meta/></head>
-            <body className="bg-bg-dark text-main font-inter">
+            <body className="bg-bg-dark text-main font-inter min-h-full h-full">
                 {children}
             </body>
         </html>
