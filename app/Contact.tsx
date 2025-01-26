@@ -22,11 +22,11 @@ export default async function Contact() {
             </p>
             <div className="flex gap-4">
                 {
-                    contacts.map(contact => {
+                    contacts.map((contact, index) => {
                         const Icon = iconAssociations.get(contact.type) ?? LinkIcon;
                         return <>
                             <Link
-                                key={contact.type}
+                                key={index * 2}
                                 className="flex gap-2 items-center font-mono text-sm lg:text-base
                                 border-b border-transparent hover:border-main opacity-80 hover:opacity-100 transition-all"
                                 href={contact.href}
@@ -35,7 +35,7 @@ export default async function Contact() {
                                 <Icon className="size-[14px] lg:size-4" />
                                 <span className="leading-tight">{contact.text}</span>
                             </Link>
-                            <span key={contact.type + "/"} className="last:hidden">/</span>
+                            <span key={index * 2 + 1} className="last:hidden">/</span>
                         </>
                     })
                 }
