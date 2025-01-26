@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { getHideAttribution } from "./data";
+import Attribute from "./Attribute";
+import { getRepository } from "./data";
 
 export default async function Footer() {
-    const hideAttribution = await getHideAttribution();
+    const repository = await getRepository();
 
-    return <div className={`flex flex-col items-center py-4 ${hideAttribution ? "invisible" : ""}`}>
-        <Link href="https://github.com/kevinMEH/portfolio" target="_blank" className="flex items-center gap-1.5 text-main/50 hover:text-main transition-colors">
+    return <div className={`flex flex-col items-center py-4`}>
+        <Link href={repository} target="_blank" className="flex items-center gap-1.5 text-main/50 hover:text-main transition-colors">
             <StarIcon size={14} />
             <span className="text-xs font-mono leading-none pt-[0.5px]">
-                kevinMEH/portfolio
+                { repository.split("github.com/")[1] }
             </span>
         </Link>
+        <Attribute />
     </div>
 }
 

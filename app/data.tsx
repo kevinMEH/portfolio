@@ -40,6 +40,6 @@ export async function getContacts() {
     return data.contacts;
 }
 
-export async function getHideAttribution() {
-    return data.hideAttribution;
+export async function getRepository() {
+    return data.repository;
 }
