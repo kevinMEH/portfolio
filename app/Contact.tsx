@@ -20,7 +20,7 @@ export default async function Contact() {
             <p className="text-sm sm:text-base pb-2 md:pb-3">
                 {contactTitle}
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 select-none">
                 {
                     contacts.map((contact, index) => {
                         const Icon = iconAssociations.get(contact.type) ?? LinkIcon;
