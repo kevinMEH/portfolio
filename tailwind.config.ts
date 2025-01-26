@@ -13,9 +13,7 @@ export default {
             "transparent": "transparent",
             "current": "currentColor",
             
-            "bg": {
-                dark: "#0C1118",
-            },
+            "bg-dark": "#0C1118",
             
             "main": "#EFF8FA",
             "sub": "#B3BDC1",
