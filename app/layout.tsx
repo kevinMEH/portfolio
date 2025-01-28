@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Fira_Code } from "next/font/google";
+import { Inter, Fira_Code, Barlow } from "next/font/google";
 import { getWebsiteDescription, getWebsiteTitle } from "./data";
 import "./globals.css";
 import Meta from "./Meta";
@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
     themeColor: "#0C1118"
 }
+
+const title = Barlow({
+    subsets: ["latin"],
+    weight: ["400", "600", "700"],
+    display: "block",
+    variable: "--font-title"
+})
 
 const inter = Inter({
     subsets: ["latin"],
@@ -29,7 +36,7 @@ export default function RootLayout({
     children,
 }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={`h-full ${inter.variable} ${mono.variable}`} suppressHydrationWarning={true}>
+        <html lang="en" className={`h-full ${inter.variable} ${mono.variable} ${title.variable}`} suppressHydrationWarning={true}>
             <head><Meta/></head>
             <body className="bg-bg-dark text-main font-inter min-h-full h-full">
                 {children}

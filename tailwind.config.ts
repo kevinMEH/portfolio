@@ -19,6 +19,7 @@ export default {
             "sub": "#B3BDC1",
         },
         fontFamily: {
+            "title": ["var(--font-title)"],
             "inter": ["var(--font-inter)"],
             "mono": ["var(--font-mono)"]
         }

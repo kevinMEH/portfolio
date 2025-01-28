@@ -13,11 +13,9 @@ export default async function Contact() {
     iconAssociations.set("github", GithubIcon);
 
     return (
-        <div className="flex flex-col gap-3 lg:pb-8">
-            <h2 className="text-sub font-bold font-mono sm:text-lg">
-                Contact
-            </h2>
-            <p className="text-sm sm:text-base pb-2 md:pb-3">
+        <div className="flex flex-col gap-3">
+            <h2 className="text-sub font-title font-bold tracking-wide">CONTACT</h2>
+            <p className="text-sm sm:text-base pb-1 md:pb-2">
                 {contactTitle}
             </p>
             <div className="flex gap-4 select-none">

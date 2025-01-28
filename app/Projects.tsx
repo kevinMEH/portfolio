@@ -6,8 +6,8 @@ export default async function Projects() {
     const projects = await getProjects();
 
     return <div className="flex flex-col gap-3">
-        <h2 className="text-sub font-bold font-mono sm:text-lg">Featured Projects</h2>
-        <div className="space-y-5 sm:space-y-8 sm:pt-3">
+            <h2 className="text-sub font-title font-bold tracking-wide">PROJECTS</h2>
+        <div className="space-y-5 sm:space-y-8 sm:pt-3 -mx-1">
             { projects.map((project, index) => {
                 return <Link key={index} className="relative rounded-xl overflow-clip flex flex-col gap-3 p-4 sm:px-6 justify-end h-44 md:h-36 lg:h-32 group" href={project.url} target="_blank">
                     <div className="font-mono tracking-tight flex flex-col justify-end gap-1">
