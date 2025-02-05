@@ -113,3 +113,8 @@ you have in `data.json`.
 - Note: The project images becomes shorter and wider the wider the resolution
     of the webpage. This is intentional. Make sure that the main contents of
     your project images do not take up significant amounts of height.
+
+## Favicon
+
+Specify a favicon for your website by modifying `public/favicon.ico`.
+- Recommended dimensions: 64px x 64px

@@ -37,7 +37,10 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en" className={`h-full ${inter.variable} ${mono.variable} ${title.variable}`} suppressHydrationWarning={true}>
-            <head><Meta/></head>
+            <head>
+                <Meta/>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
+            </head>
             <body className="bg-bg-dark text-main font-inter min-h-full h-full">
                 {children}
             </body>
