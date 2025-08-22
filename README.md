@@ -17,9 +17,9 @@ in your portfolio website. Do not clone and republish this repository.
 ### Data
 
 To customize your portfolio, simply supply a `data.json` file inside the
-`custom` folder with the data that you want.
+`public` folder with the data that you want.
 
-Inside the `custom` folder, you will find a `data.example.json` file. This file
+Inside the `public` folder, you will find a `data.example.json` file. This file
 serves as an example as to how your `data.json` file should look like. For a
 more complete explanation on the contents of each field, please refer to
 [`Customize.md`](./Customize.md).
@@ -55,9 +55,9 @@ npm install
 ```
 
 Follow the modification guide above and customize your portfolio.
-- [ ] Create `custom/data.json` based on `custom/data.example.json`
-- [ ] Modify `custom/data.json` with your own details
-- [ ] Replace the images in `public` with your own
+- [ ] Create `public/data.json` based on `public/data.example.json`
+- [ ] Modify `public/data.json` with your own details
+- [ ] Replace the images in `public/images` with your own
 
 Next, start the development server:
 

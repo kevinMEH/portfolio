@@ -1,4 +1,4 @@
-import data from "@/custom/data.json";
+import data from "@/public/data.json";
 
 export async function getWebsiteTitle() {
     return data.websiteTitle;

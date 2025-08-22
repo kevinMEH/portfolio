@@ -3,8 +3,8 @@
 ## Data
 
 Below is a specification of all the fields you should supply inside
-`custom/data.json`. We recommend you copy the `custom/data.example.json` file
-into `custom/data.json` and start modifying from there in order to avoid typos
+`public/data.json`. We recommend you copy the `public/data.example.json` file
+into `public/data.json` and start modifying from there in order to avoid typos
 or value structuring errors.
 
 Note: `data.json` is included as a source file for Tailwind CSS. Therefore, all
