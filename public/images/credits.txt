@@ -5,11 +5,14 @@ Thanks to Unsplash for the following project images:
 profile.png:
 https://unsplash.com/photos/blue-mountains-at-daytime-IhWRrZx4-kk
 
+banner.png:
+https://unsplash.com/photos/panoramic-photography-of-mountains-kKvQJ6rK6S4
+
 project_1.png:
 https://unsplash.com/photos/bird-eye-view-photography-of-a-green-trees-uMWPrcRsrto
 
-banner.png, project_2.png:
-https://unsplash.com/photos/panoramic-photography-of-mountains-kKvQJ6rK6S4
+project_2.png:
+https://unsplash.com/photos/vintage-gray-game-console-and-joystick-p0j-mE6mGo4
 
 project_3.png:
 https://unsplash.com/photos/a-painting-of-a-group-of-people-in-a-courtyard-TH8_P_XtmhY
