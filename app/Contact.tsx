@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { Fragment, JSX } from "react";
 import Link from "next/link";
 import { getContacts, getContactText } from "./data";
 
@@ -20,11 +20,10 @@ export default async function Contact() {
             </p>
             <div className="flex gap-4 select-none">
                 {
-                    contacts.map((contact, index) => {
+                    contacts.map(contact => {
                         const Icon = iconAssociations.get(contact.type) ?? LinkIcon;
-                        return <>
+                        return <Fragment key={contact.text}>
                             <Link
-                                key={index * 2}
                                 className="flex gap-2 items-center font-mono text-sm lg:text-base
                                 border-b border-transparent hover:border-main transition-all"
                                 href={contact.href}
@@ -33,8 +32,8 @@ export default async function Contact() {
                                 <Icon className="size-[14px] lg:size-4" />
                                 <span className="leading-tight">{contact.text}</span>
                             </Link>
-                            <span key={index * 2 + 1} className="last:hidden">/</span>
-                        </>
+                            <span className="last:hidden">/</span>
+                        </Fragment>
                     })
                 }
             </div>
