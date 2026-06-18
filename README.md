@@ -41,7 +41,7 @@ Then open the printed local URL (default [http://127.0.0.1:3000](http://127.0.0.
 
 The Sentient font is licensed from [Indian Type Foundry](https://www.indiantypefoundry.com/) via [Fontshare](https://www.fontshare.com/) and is not redistributable, so its files are gitignored and excluded from this repository.
 
-Download [Sentient](https://www.fontshare.com/fonts/sentient) from Fontshare and place the two variable WOFF2 files in `static/fonts/` with these exact names (matching the `@font-face` declarations in `src/app.css`):
+The two variable WOFF2 files are fetched automatically by the `prepare` script during `npm install`. The prepare script (`scripts/prepare.sh`) downloads the font from Fontshare and extracts these files into `static/fonts/`:
 
 ```
 static/fonts/Sentient-Variable.woff2
