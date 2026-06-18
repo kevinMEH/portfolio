@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script>
+			const themePreferenceKey = 'theme-preference';
+			const animationPreferenceKey = 'animation-preference';
+			const animationUrlPreference = new URLSearchParams(window.location.search).get('animate');
+			const themePreference = window.localStorage.getItem(themePreferenceKey);
+			const animationPreference = window.localStorage.getItem(animationPreferenceKey);
+			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const theme = ['light', 'dark', 'system'].includes(themePreference) ? themePreference : 'system';
+			const colorScheme = theme === 'system' ? (prefersDark ? 'dark' : 'light') : theme;
+			const botPattern =
+				/bot|crawler|spider|crawling|google|bing|yandex|duckduck|baidu|facebookexternalhit|twitterbot|linkedinbot|slackbot|discordbot/i;
+
+			document.documentElement.dataset.themePreference = theme;
+			document.documentElement.dataset.colorScheme = colorScheme;
+
+			if (
+				!window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
+				animationUrlPreference !== 'false' &&
+				animationPreference !== 'off' &&
+				!botPattern.test(window.navigator.userAgent)
+			) {
+				document.documentElement.dataset.revealEnabled = 'true';
+			}
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
