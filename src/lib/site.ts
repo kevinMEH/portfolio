@@ -11,6 +11,7 @@ export class ProjectItem {
 	public readonly image: string;
 	public readonly alt: string;
 	public readonly href: string;
+	public readonly githubRepo: string | null;
 	public readonly revealDelayMs: number;
 	public readonly textDelayMs: number;
 
@@ -20,6 +21,7 @@ export class ProjectItem {
 		image: string,
 		alt: string,
 		href: string,
+		githubRepo: string | null,
 		revealDelayMs: number,
 		textDelayMs: number
 	) {
@@ -28,6 +30,7 @@ export class ProjectItem {
 		this.image = image;
 		this.alt = alt;
 		this.href = href;
+		this.githubRepo = githubRepo;
 		this.revealDelayMs = revealDelayMs;
 		this.textDelayMs = textDelayMs;
 	}
@@ -50,6 +53,7 @@ export const projects = [
 		'/images/magic-compact.jpg',
 		'Magic Compact project thumbnail',
 		'https://github.com/aerovato/magic-compact',
+		'aerovato/magic-compact',
 		500,
 		60
 	),
@@ -59,6 +63,7 @@ export const projects = [
 		'/images/nitro.jpg',
 		'Nitro project thumbnail',
 		'https://github.com/aerovato/nitro',
+		'aerovato/nitro',
 		500,
 		60
 	),
@@ -68,6 +73,7 @@ export const projects = [
 		'/images/container.jpg',
 		'Container project thumbnail',
 		'https://github.com/aerovato/container',
+		'aerovato/container',
 		500,
 		60
 	),
@@ -77,6 +83,7 @@ export const projects = [
 		'/images/keyscan.jpg',
 		'Keyscan project thumbnail',
 		'https://github.com/aerovato/keyscan',
+		'aerovato/keyscan',
 		500,
 		60
 	)
