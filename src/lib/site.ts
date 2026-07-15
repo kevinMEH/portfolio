@@ -72,7 +72,7 @@ export const projects = [
 		'Ultra-lightweight sandbox for AI coding harnesses. Unleash OpenCode, Claude Code, and Codex inside isolated containers.',
 		'/images/container.jpg',
 		'Container project thumbnail',
-		'https://github.com/aerovato/container',
+		'https://container.aerovato.com',
 		'aerovato/container',
 		500,
 		60
