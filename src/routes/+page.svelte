@@ -35,6 +35,7 @@
 	let aboutSection: RevealApi | undefined = $state();
 	let projectsSection: RevealApi | undefined = $state();
 	let contactSection: RevealApi | undefined = $state();
+	let writingLink: RevealApi | undefined = $state();
 	let aboutText1: RevealApi | undefined = $state();
 	let aboutText2: RevealApi | undefined = $state();
 	let aboutLink1: RevealApi | undefined = $state();
@@ -107,6 +108,7 @@
 		await aboutSection?.reveal();
 		await projectsSection?.reveal();
 		await contactSection?.reveal();
+		await writingLink?.reveal();
 	};
 
 	onMount(() => {
@@ -258,5 +260,9 @@
 				</div>
 			</div>
 		</Section>
+
+		<div class="pt-6">
+			<LinkButton bind:this={writingLink} href="/blog" label="Writing →" variant="inline" revealDelayMs={180} />
+		</div>
 	</div>
 </main>
