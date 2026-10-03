@@ -4,7 +4,14 @@ date: '2026-10-03'
 description: Why agents need project documentation instead of retrieval from old conversations.
 ---
 
-![A tangle of colorful wires](/images/blog/agents-dont-need-memory/tangled.png)
+<img
+  src="/images/blog/agents-dont-need-memory/tangled-800.webp"
+  srcset="/images/blog/agents-dont-need-memory/tangled-800.webp 800w, /images/blog/agents-dont-need-memory/tangled-1600.webp 1600w"
+  sizes="(max-width: 840px) calc(100vw - 2.5rem), 800px"
+  width="1600"
+  height="1200"
+  alt="A tangle of colorful wires"
+/>
 
 # Agents Don't Need Memory. They Need Documentation.
 
@@ -66,7 +73,14 @@ I recognized this problem over a year ago when I first started programming with 
 
 This set of rudimentary instructions slowly transformed into a formal system, and then into a plugin called **Operator Memory** that I've been using regularly within all of my projects.
 
-![Diagram comparing the prompt, build, forget loop with Operator Memory's prompt, consult, build, update loop](/images/blog/agents-dont-need-memory/change-the-loop.png)
+<img
+  src="/images/blog/agents-dont-need-memory/change-the-loop.png"
+  width="3200"
+  height="1280"
+  loading="lazy"
+  decoding="async"
+  alt="Diagram comparing the prompt, build, forget loop with Operator Memory's prompt, consult, build, update loop"
+/>
 
 Operator Memory provides document-based memory using the model described above. Operator provides your agent with a Markdown brain where it can persist important knowledge: instructions, specs, research, indexes. Before working, the agent always consults the brain for relevant documents. After working, the agent updates the brain; revisiting stale documents, adding documents where missing.
 
