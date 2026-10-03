@@ -8,7 +8,7 @@
 	};
 
 	const starCountsPromise = fetch(
-		`https://api.github.com/search/repositories?q=${encodeURIComponent('repo:aerovato/magic-compact repo:aerovato/nitro repo:aerovato/container repo:aerovato/keyscan')}&per_page=4`
+		`https://api.github.com/search/repositories?q=${encodeURIComponent('repo:aerovato/operator-memory repo:aerovato/magic-compact repo:aerovato/container repo:aerovato/keyscan')}&per_page=4`
 	)
 		.then((response) => response.json() as Promise<RepoSearchResponse>)
 		.then((data) => new Map(data.items.map((repo) => [repo.full_name, repo.stargazers_count])))
