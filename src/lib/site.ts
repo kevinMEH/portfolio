@@ -48,22 +48,22 @@ export class ContactLink {
 
 export const projects = [
 	new ProjectItem(
+		'Operator Memory',
+		'The self-improving context engine for coding agents. Turn agent work into lasting project knowledge.',
+		'/images/operator-memory.jpg',
+		'Operator Memory project thumbnail',
+		'https://github.com/aerovato/operator-memory',
+		'aerovato/operator-memory',
+		500,
+		60
+	),
+	new ProjectItem(
 		'Magic Compact',
 		'Lossless context compression for Claude Code & OpenCode. Compress conversations without compromising quality.',
 		'/images/magic-compact.jpg',
 		'Magic Compact project thumbnail',
 		'https://github.com/aerovato/magic-compact',
 		'aerovato/magic-compact',
-		500,
-		60
-	),
-	new ProjectItem(
-		'Nitro',
-		'A simple and efficient harness for Bash. Translate natural language into terminal velocity.',
-		'/images/nitro.jpg',
-		'Nitro project thumbnail',
-		'https://github.com/aerovato/nitro',
-		'aerovato/nitro',
 		500,
 		60
 	),
