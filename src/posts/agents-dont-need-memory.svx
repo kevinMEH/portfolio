@@ -5,11 +5,11 @@ description: Why agents need project documentation instead of retrieval from old
 ---
 
 <img
-  src="/images/blog/agents-dont-need-memory/tangled-800.webp"
-  srcset="/images/blog/agents-dont-need-memory/tangled-800.webp 800w, /images/blog/agents-dont-need-memory/tangled-1600.webp 1600w"
+  src="/images/blog/agents-dont-need-memory/tangled-800.jpg"
+  srcset="/images/blog/agents-dont-need-memory/tangled-800.jpg 800w, /images/blog/agents-dont-need-memory/tangled-1600.jpg 1600w"
   sizes="(max-width: 840px) calc(100vw - 2.5rem), 800px"
   width="1600"
-  height="1200"
+  height="1199"
   alt="A tangle of colorful wires"
 />
 
