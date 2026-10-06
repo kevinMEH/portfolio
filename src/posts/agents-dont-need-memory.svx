@@ -83,6 +83,8 @@ In the time since, this same idea has been rediscovered across the industry: age
 
 **Operator** is not a traditional memory plugin. Operator is a **context engine**: it provides a brain for the agent and fundamentally alters the agentic loop so that consulting documentation before work and maintaining it afterwards becomes structural phases of every task. With Operator, the agent automatically commits and updates knowledge without prompt or reminders; and through documentation, the agent gains "memory".
 
+Operator is free and open source: <a href="https://github.com/aerovato/operator-memory" target="_blank" rel="noopener noreferrer">https://github.com/aerovato/operator-memory</a>
+
 ## Inside the Brain
 
 But an ideal brain must be more than a folder of scattered notes. In order for the brain to be useful and not another summary of existing code, four things must be right:
