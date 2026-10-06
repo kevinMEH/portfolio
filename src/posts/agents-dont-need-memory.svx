@@ -1,6 +1,7 @@
 ---
 title: Agents Don't Need Memory. They Need Documentation.
 date: '2026-10-03'
+updated: '2026-10-05'
 description: Why agents need project documentation instead of retrieval from old conversations.
 ---
 
@@ -137,5 +138,3 @@ Operator's document-based memory model also comes with other distinct advantages
 What started as my `internal/` folder in August 2025 has been continuously refined into the deceptively simple system you see today. If you want to try Operator out, it's free and open source: <a href="https://github.com/aerovato/operator-memory" target="_blank" rel="noopener noreferrer">https://github.com/aerovato/operator-memory</a>
 
 I won't say that Operator is perfect; there are many times where I have to manually intervene to ask to create, rewrite, or trim documents. But as AI continues to improve, I believe that Operator would too.
-
-Last updated: October 5th, 2026
