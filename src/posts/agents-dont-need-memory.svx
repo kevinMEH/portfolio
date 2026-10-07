@@ -91,13 +91,13 @@ But an ideal brain must be more than a folder of scattered notes. In order for t
 
 ### Contents
 
-The codebase already tells you what the code does. Operator's brain documents everything else: requirements, decisions, constraints, as well as reusable research, plans, and standards; meta-information that guides your agent and prevents features from drifting over time.
+The codebase already tells you what the code does. Operator's brain documents everything else: requirements, decisions, constraints, as well as mappings, reusable research, and standards; meta-information that guides your agent and prevents features from drifting over time.
 
-If you don't document these things and simply infer from the code, then every future session will start with 80k tokens worth of useless exploration providing reverse engineered approximations of original intents.
+If you don't document these things and simply infer everything from code, then every future session will start with 80k tokens worth of exploration that end up providing a lossy reverse engineered approximation of original intents.
 
-Those who say *"the code is the documentation"* do not have a good understanding of how LLMs work. When you enter into a new session, the context window resets. Unless you're working on a popular library, the agent has 0 recollection of what your project does and how each component works.
+That's also why you can't just say *"the code is the documentation"*; because every thoughtful system is a set of requirements, decisions, philosophies that code alone cannot meaningfully capture.
 
-Having the agent "read code" instead of compact intent-driven documentation is as ridiculous as learning Linux by reading the kernel's 40 million lines of code.
+Case in point: Operator's harness adapter plugins are extremely lean; the Claude Code adapter is less than 100 lines of TS code. That's because a deliberate architectural decision was made to offload as much logic as possible to the CLI; if I never documented and enforced this philosophy at the beginning, an agent may easily decide to take the lazy path and bake logic into the harness itself, making future harness implementations difficult.
 
 ### Discovery
 
